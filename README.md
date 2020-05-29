@@ -33,7 +33,7 @@ Criamos uma classe chamada **MessageHandler** na pasta **Handlers** herdando da 
 No arquivo de configuração da API **WebApiConfig.cs** adicionamos nossa classe no Handler de mensagens.
 
 ```
-	config.MessageHandlers.Add(new MessageHandler());
+config.MessageHandlers.Add(new MessageHandler());
 ```
 
 ## Publicação
