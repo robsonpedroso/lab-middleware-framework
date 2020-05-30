@@ -1,44 +1,44 @@
 # Lab - Middleware com .Net Framework
 
-Projeto para mostrar a utilização um estilo de "Middleware" no .Net Framework.
+Projeto para mostrar a utilizaÃ§Ã£o um estilo de "Middleware" no .Net Framework.
 
-## Introdução
+## IntroduÃ§Ã£o
 
-Essas instruções fornecerão uma cópia do projeto em execução na sua máquina local para fins de desenvolvimento e teste.
+Essas instruÃ§Ãµes fornecerÃ£o uma cÃ³pia do projeto em execuÃ§Ã£o na sua mÃ¡quina local para fins de desenvolvimento e teste.
 
 ### Prerequisitos
 
-O que você precisa para baixar, rodar e disponibilizar.
+O que vocÃª precisa para baixar, rodar e disponibilizar.
 
 * .Net Framework 4.7.1
-* IDE de sua preferência 
+* IDE de sua preferÃªncia 
 
-### Instalação
+### InstalaÃ§Ã£o
 
-Após a execução do pre requisitos, segue um passo a passo de como rodar localmente.
+ApÃ³s a execuÃ§Ã£o do pre requisitos, segue um passo a passo de como rodar localmente.
 
-Clonar o repositório
+Clonar o repositÃ³rio
 
 ```
 git clone git@github.com:robsonpedroso/lab-middleware-framework.git
 ```
-Abra a solução com o seu IDE (no meu caso Visual Studio) e compile.
+Abra a soluÃ§Ã£o com o seu IDE (no meu caso Visual Studio) e compile.
 
-### Explicação
+### ExplicaÃ§Ã£o
 
 Nesse projeto utilizamos o manipularor de mensagens HTTP para interceptar o response antes de retornar para o requisitante.
 
 Criamos uma classe chamada **MessageHandler** na pasta **Handlers** herdando da classe **DelegatingHandler** e sobrescrevendo o metodo **SendAsync**
 
-No arquivo de configuração da API **WebApiConfig.cs** adicionamos nossa classe no Handler de mensagens.
+No arquivo de configuraÃ§Ã£o da API **WebApiConfig.cs** adicionamos nossa classe no Handler de mensagens.
 
 ```
 config.MessageHandlers.Add(new MessageHandler());
 ```
 
-## Publicação
+## PublicaÃ§Ã£o
 
-Não foi publicado
+NÃ£o foi publicado
 
 ## Autores
 
@@ -46,7 +46,7 @@ Não foi publicado
 
 ## License
 
-Software feito apenas para fins de estudo
+[MIT](https://gist.github.com/robsonpedroso/98dc906d5896711f07a9cffbcc2776ea)
 
 ## Ferramentas
 
